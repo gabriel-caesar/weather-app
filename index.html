@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://kit.fontawesome.com/fc2f0cdae5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+</head>
+<body>
+
+  <form novalidate class="my-form">
+
+    <nav class="apple-navbar">
+      <div class="three-circles">
+        <i class="fa-solid fa-circle" style="color: #f96565;"></i>
+        <i class="fa-solid fa-circle" style="color: #f5e664;"></i>
+        <i class="fa-solid fa-circle" style="color: #68fa61;"></i>
+      </div>
+
+      <h3>Weather App</h3>
+
+      <!-- just to center the h3 and the original three circles right -->
+      <div class="empty-div">
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+      </div>
+    </nav>
+
+    <!-- loading animation -->
+    <div id="loading" style="display: none;"></div>
+
+
+    <div class="temp-container">
+
+    </div>
+
+    <div class="search-bar-container">
+      <input type="text" id="search-bar" class="inputs" placeholder="Enter a location or ZIP..." required>
+      <button class="buttons" id="search-btn">Search</button>
+    </div>
+
+    <div class="gif-container">
+      
+    </div>
+
+  </form>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./minimalistic-sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ab4fd5;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  padding: 6px 10px;
+}
+
+.three-circles i {
+  transform: scale(0.7);
+}
+
+.apple-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.apple-navbar h3 {
+  font-weight: 500;
+  color: #fff;
+}
+
+.empty-div i {
+  color: transparent;
+}
+
+.inputs {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 20px;
+  transition: box-shadow 0.15s ease;
+  background-color: #642dd1;
+  color: #fff;
+}
+
+#search-bar::placeholder {
+  color: #cdcccc;
+}
+
+.inputs:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.buttons {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #4d13c2;
+  color: #fff;
+  transition: opacity 0.15s ease;
+}
+
+.buttons:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.buttons:active {
+  opacity: 0.5;
+}
+
+.search-bar-container {
+  margin-block: 100px;
+}
+
+#gif {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp-container h1 {
+  margin-right: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding-inline: 10px;
+}
+
+.temp-container button {
+  background-color: #436eda;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp-description {
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.location-id {
+  margin-top: 30px;
+  font-size: 18px;
+  border-bottom: 1px solid #cdcccc;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+}
+
+#loading {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff; /* Light gray border */
+  border-top: 5px solid #4d13c2; /* Blue border */
+  border-radius: 50%; /* Makes it a circle */
+  animation: spin 1s linear infinite; /* Rotate continuously */
+  margin-top: 100px;
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.error {
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+span {
+  color: #7f0000;
+  font-size: 18px;
+}
+
+@media (max-width: 920px) {
+  .my-form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 620px) {
+  .my-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 460px) {
+  .my-form {
+    width: 100%;
+  }
+}
+
+@media (max-height: 940px) {
+  .search-bar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-bar-container button {
+    margin-top: 10px;
+  }
+}
